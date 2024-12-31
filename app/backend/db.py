@@ -7,6 +7,7 @@ from sglalchemy import create_engine
 from sglalchemy.orm import sessionmaker, DeclarativeBase
 from sglalchemy import Column, Integer, String
 
+
 engine = create_engine("sqlite:///taskmanager.db")
 
 class Base(DeclarativeBase):
