@@ -3,6 +3,9 @@
 # 'sqlite:///taskmanager.db' и локальную сессию (по аналогии с видео лекцией).
 # Создайте базовый класс Base для других моделей, наследуясь от DeclarativeBase.
 
+
+
+
 from sglalchemy import create_engine
 from sglalchemy.orm import sessionmaker, DeclarativeBase
 from sglalchemy import Column, Integer, String
