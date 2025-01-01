@@ -6,14 +6,17 @@
 
 
 
-from sglalchemy import create_engine
-from sglalchemy.orm import sessionmaker, DeclarativeBase
-from sglalchemy import Column, Integer, String
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, DeclarativeBase
+from sqlalchemy import Column, Integer, String
 
 
 
 
-engine = create_engine("sqlite:///taskmanager.db")
+engine = create_engine("sqlite:///taskmanager.db", echo=True)
+
+SessionLocal = sessionmaker(bind=engine)
 
 class Base(DeclarativeBase):
     pass
+
