@@ -18,6 +18,9 @@ class Task(Base):
     user = relationship('User', back_populates='tasks')
     is_active = Column(Boolean, default=True)
 
+    user = relationship('User', back_populates='tasks')
 
-from sqlalchemy.schema import CreateTable
-print(CreateTable(Task.__table__))
+
+
+# from sqlalchemy.schema import CreateTable
+# print(CreateTable(Task.__table__))

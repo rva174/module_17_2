@@ -1,2 +1,2 @@
-# Этот файл может быть пустым, но он должен существовать
-# для работы с импортами
+from .user import router as user_router
+from .task import router as task_router

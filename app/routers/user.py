@@ -1,6 +1,10 @@
 from fastapi import APIRouter
+from app.schemas import CreateUser, UpdateUser  # Импортируйте схемы
+from app.models import User
+from app.backend.db import SessionLocal  # Предполагаем использование сессии БД
+from sqlalchemy.orm import Session
 
-router = APIRouter(prefix='/task', tags=['task'])
+router = APIRouter(prefix='/user', tags=['user'])
 
 @router.get('/')
 async def all_tasks():
