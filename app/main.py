@@ -6,6 +6,7 @@ from app.models import User
 from app.models import Task
 from app.routers import user_router, task_router
 
+
 app = FastAPI()
 
 # Создание таблиц
